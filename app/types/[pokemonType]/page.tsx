@@ -87,7 +87,7 @@ export default function PokemonTypePage({
     return (
       <div className="loading-image w-32 relative h-32 mt-20">
         <Image
-          src="/images/loading.gif"
+          src="/static/images/loading.gif"
           objectFit="contain"
           fill={true}
           alt={`Loading gif`}
@@ -101,7 +101,7 @@ export default function PokemonTypePage({
       <div className="pokemonType-container mt-14 md:mt-36 ">
         <div className="flex flex-col md:flex-row gap-10 items-center justify-around">
           <Image
-            src={"/images/" + pokemonType + ".svg"}
+            src={"/static/images/" + pokemonType + ".svg"}
             alt="Pokemon Type Icon"
             width={350}
             height={350}
@@ -136,7 +136,7 @@ export default function PokemonTypePage({
                     >
                       <div className="flex flex-col gap-2 justify-center items-center">
                         <Image
-                          src={"/images/" + damageRelation.name + ".svg"}
+                          src={"/static/images/" + damageRelation.name + ".svg"}
                           alt="double damage Icon"
                           width={100}
                           height={100}
@@ -168,7 +168,7 @@ export default function PokemonTypePage({
                     >
                       <div className="flex flex-col gap-2 justify-center items-center">
                         <Image
-                          src={"/images/" + damageRelation.name + ".svg"}
+                          src={"/static/images/" + damageRelation.name + ".svg"}
                           alt="double damage Icon"
                           width={100}
                           height={100}
@@ -200,7 +200,7 @@ export default function PokemonTypePage({
                     >
                       <div className="flex flex-col gap-2 justify-center items-center">
                         <Image
-                          src={"/images/" + damageRelation.name + ".svg"}
+                          src={"/static/images/" + damageRelation.name + ".svg"}
                           alt="half damage Icon"
                           width={100}
                           height={100}
@@ -232,7 +232,7 @@ export default function PokemonTypePage({
                     >
                       <div className="flex flex-col gap-2 justify-center items-center">
                         <Image
-                          src={"/images/" + damageRelation.name + ".svg"}
+                          src={"/static/images/" + damageRelation.name + ".svg"}
                           alt="half damage Icon"
                           width={100}
                           height={100}
@@ -264,7 +264,7 @@ export default function PokemonTypePage({
                     >
                       <div className="flex flex-col gap-2 justify-center items-center">
                         <Image
-                          src={"/images/" + damageRelation.name + ".svg"}
+                          src={"/static/images/" + damageRelation.name + ".svg"}
                           alt="half damage Icon"
                           width={100}
                           height={100}
@@ -296,7 +296,7 @@ export default function PokemonTypePage({
                     >
                       <div className="flex flex-col gap-2 justify-center items-center">
                         <Image
-                          src={"/images/" + damageRelation.name + ".svg"}
+                          src={"/static/images/" + damageRelation.name + ".svg"}
                           alt="half damage Icon"
                           width={100}
                           height={100}

@@ -53,7 +53,7 @@ export default function RootLayout({
               <div className="logo">
                 <Link href={"/"}>
                   <Image
-                    src="/images/logo.png"
+                    src="/static/images/logo.png"
                     alt="Your Company Logo"
                     width="120"
                     height="50"
@@ -110,7 +110,7 @@ export default function RootLayout({
           <div className="p-20  flex flex-col items-center justify-center mt-14  md:mt-36 border-t border-t-darkGray">
             <div className="footer-logo-image w-60 md:w-80 relative h-20 md:h-32 ">
               <Image
-                src={"/images/logo.png"}
+                src={"/static/images/logo.png"}
                 style={{ objectFit: "contain" }}
                 fill={true}
                 priority

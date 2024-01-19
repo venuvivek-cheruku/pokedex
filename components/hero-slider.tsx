@@ -62,7 +62,7 @@ export function HeroSlider() {
                   <div className="imageWithCircle relative w-60 md:w-[500px] h-60 md:h-[500px]">
                     <span className="imageWithBGCircle"></span>
                     <Image
-                      src="/images/slideImageOne.png"
+                      src="/static/images/slideImageOne.png"
                       alt="Slide Image"
                       fill={true}
                       sizes="(max-width: 768px) 300px"
@@ -100,7 +100,7 @@ export function HeroSlider() {
                       style={{ background: "#f95587" }}
                     ></span>
                     <Image
-                      src="/images/mew.png"
+                      src="/static/images/mew.png"
                       alt="Slide Image"
                       fill={true}
                       sizes="(max-width: 768px) 300px"

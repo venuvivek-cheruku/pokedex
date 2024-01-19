@@ -51,7 +51,7 @@ export function PokemonCard({ name, image }: PokemonCardProps) {
     return (
       <div className="loading-image w-32 relative h-32 mt-20">
         <Image
-          src="/images/loading.gif"
+          src="/static/images/loading.gif"
           fill={true}
           sizes="(max-width: 768px) 128px, 128px"
           alt={`Loading gif`}

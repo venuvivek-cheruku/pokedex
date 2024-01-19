@@ -17,7 +17,7 @@ export async function ExploreRegions() {
             "
             >
               <Image
-                src={"/images/region-1.png"}
+                src={"/static/images/region-1.png"}
                 alt={"region Image"}
                 fill={true}
               />
@@ -37,7 +37,7 @@ export async function ExploreRegions() {
             "
             >
               <Image
-                src={"/images/region-2.png"}
+                src={"/static/images/region-2.png"}
                 alt={"region Image"}
                 fill={true}
               />
@@ -57,7 +57,7 @@ export async function ExploreRegions() {
             "
             >
               <Image
-                src={"/images/region-3.png"}
+                src={"/static/images/region-3.png"}
                 alt={"region Image"}
                 fill={true}
               />

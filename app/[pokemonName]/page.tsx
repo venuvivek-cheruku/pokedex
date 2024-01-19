@@ -98,7 +98,7 @@ export default function PokemonPage({ params }: PokemonPageProps) {
     return (
       <div className="loading-image w-32 relative h-32  mt-14 md:mt-36">
         <Image
-          src="/images/loading.gif"
+          src="/static/images/loading.gif"
           style={{ objectFit: "contain" }}
           alt={`Loading gif`}
           width={128}

@@ -87,7 +87,11 @@ export function FeaturedPokemon() {
   if (loading) {
     return (
       <div className="loading-image w-24 relative h-24">
-        <Image src="/images/loading.gif" fill={true} alt={`Loading gif`} />
+        <Image
+          src="/static/images/loading.gif"
+          fill={true}
+          alt={`Loading gif`}
+        />
       </div>
     );
   }

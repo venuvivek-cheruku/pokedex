@@ -30,7 +30,7 @@ export async function ExploreTypes() {
                 }}
               ></span>
               <Image
-                src={"/images/charmander.png"}
+                src={"/static/images/charmander.png"}
                 alt={"type Image"}
                 fill={true}
               />
@@ -57,7 +57,7 @@ export async function ExploreTypes() {
                 }}
               ></span>
               <Image
-                src={"/images/squirtle.png"}
+                src={"/static/images/squirtle.png"}
                 alt={"type Image"}
                 fill={true}
                 style={{ width: "100%", height: "100%" }}
@@ -85,7 +85,7 @@ export async function ExploreTypes() {
                 }}
               ></span>
               <Image
-                src={"/images/bulbasaur.png"}
+                src={"/static/images/bulbasaur.png"}
                 alt={"type Image"}
                 fill={true}
               />
@@ -112,7 +112,7 @@ export async function ExploreTypes() {
                 }}
               ></span>
               <Image
-                src={"/images/pikachu2.png"}
+                src={"/static/images/pikachu2.png"}
                 alt={"type Image"}
                 fill={true}
               />

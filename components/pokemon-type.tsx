@@ -14,7 +14,7 @@ export function PokemonTypeButtons({ pokemonType }: PokemonTypeProps) {
         {typesArray.map((typeObj: any, index: number) => (
           <Link href={`/types/${typeObj.type.name}`} key={index}>
             <Image
-              src={`/Images/${typeObj.type.name}.svg`}
+              src={`/static/images/${typeObj.type.name}.svg`}
               alt={`${typeObj.type.name}Icon`}
               width={30}
               height={30}

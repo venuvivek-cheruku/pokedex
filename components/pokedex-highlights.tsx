@@ -14,7 +14,7 @@ export function PokemonHighlights() {
             <div className="imageWithCircle relative w-72 h-72 md:w-[450px] md:h-[450px] ">
               <span className="imageWithBGCircle"></span>
               <Image
-                src="/images/ph1.png"
+                src="/static/images/ph1.png"
                 alt="Slide Image"
                 fill={true}
                 sizes="(max-width: 768px) 18rem, 18rem"
@@ -32,7 +32,7 @@ export function PokemonHighlights() {
           <div className="PhGridItem text-center">
             <div className="phGridItemImg w-full h-48 relative overflow-hidden rounded-lg">
               <Image
-                src="/images/PhRegions.png"
+                src="/static/images/PhRegions.png"
                 alt="Slide Image"
                 fill={true}
                 sizes="(max-width: 768px) 18rem, 18rem"
@@ -51,7 +51,7 @@ export function PokemonHighlights() {
           <div className="PhGridItem text-center">
             <div className="phGridItemImg w-full h-48 relative  bg-bgSecondary ">
               <Image
-                src="/images/phType2.png"
+                src="/static/images/phType2.png"
                 alt="Slide Image"
                 fill={true}
                 style={{

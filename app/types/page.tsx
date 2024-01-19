@@ -67,7 +67,7 @@ export default function TypesPage() {
                 <Link href={`types/${type.name}`} key={index}>
                   <div className="typeImage w-32 h-32  md:w-52 md:h-52 relative">
                     <Image
-                      src={"/Images/" + type.name + ".svg"}
+                      src={"/static/images/" + type.name + ".svg"}
                       alt={type.name + "Image"}
                       fill={true}
                       priority
