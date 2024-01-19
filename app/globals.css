@@ -3,25 +3,154 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  --normal: #a8a77a;
+  --fire: #be5649;
+  --water: #0dafd9;
+  --electric: #ffb759;
+  --grass: #7ac74c;
+  --ice: #96d9d6;
+  --fighting: #c22e28;
+  --poison: #a33ea1;
+  --ground: #e2bf65;
+  --flying: #a98ff3;
+  --psychic: #f95587;
+  --bug: #a6b91a;
+  --rock: #b6a136;
+  --ghost: #735797;
+  --dragon: #6f35fc;
+  --dark: #705746;
+  --steel: #b7b7ce;
+  --fairy: #d685ad;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --hp: #ff6969;
+  --attack: #f5ac78;
+  --defense: #fae078;
+  --special-attack: #9db7f5;
+  --special-defense: #a7db8d;
+  --speed: #fa92b2;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #070217;
+  color: #cccccc;
+}
+body main {
+  max-width: 1398px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1397px) {
+  body main,
+  header {
+    padding: 0rem 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  body main,
+  header {
+    padding: 0rem 1rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
+.imageWithCircle {
+  position: relative;
+}
+
+.imageWithBGCircle {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #cccccc;
+  bottom: 0%;
+  margin: 0 auto;
+  right: 50%;
+  transform: translate(50%);
+}
+
+.imageWithCircle img {
+  width: 480px;
+  height: 480px;
+  filter: drop-shadow(10px 20px 4px rgba(0, 0, 0, 0.4));
+}
+
+img {
+  filter: drop-shadow(10px 20px 4px rgba(0, 0, 0, 0.4));
+}
+
+.slick-dots {
+  position: relative !important;
+  bottom: 0 !important;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-slide {
+  padding: 0px 1rem;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: white !important;
+}
+
+.slick-dots li button:before {
+  color: white !important;
+  font-size: 14px !important;
+}
+
+.hamburger .line {
+  width: 30px;
+  height: 3px;
+  background-color: #ecf0f1;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+#hamburger-10 {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-10.is-active {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#hamburger-10.is-active .line:nth-child(1) {
+  width: 10px;
+}
+
+#hamburger-10.is-active .line:nth-child(2) {
+  width: 20px;
+}
+
+.mobile-menu.is-active {
+  display: flex;
+  right: -1rem;
+  transition: right 0.5s ease-in-out;
 }
