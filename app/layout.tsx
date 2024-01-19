@@ -106,45 +106,53 @@ export default function RootLayout({
         <main className="flex min-h-screen flex-col items-center mt-24  md:mt-36">
           {children}
         </main>
-        <footer className="bg-bgSecondary p-20 flex flex-col items-center justify-center mt-14  md:mt-36 border-t border-t-darkGray">
-          <div className="footer-logo-image w-60 md:w-80 relative h-20 md:h-32">
-            <Image
-              src={"/images/logo.png"}
-              style={{ objectFit: "contain" }}
-              fill={true}
-              priority
-              sizes="(max-width: 768px) 15rem 8rem"
-              alt={`footer logo`}
-            />
+        <footer className="bg-bgSecondary ">
+          <div className="p-20  flex flex-col items-center justify-center mt-14  md:mt-36 border-t border-t-darkGray">
+            <div className="footer-logo-image w-60 md:w-80 relative h-20 md:h-32 ">
+              <Image
+                src={"/images/logo.png"}
+                style={{ objectFit: "contain" }}
+                fill={true}
+                priority
+                sizes="(max-width: 768px) 15rem 8rem"
+                alt={`footer logo`}
+              />
+            </div>
+            <nav
+              role="navigation"
+              className="menuItems font-heading text-white uppercase mt-14"
+            >
+              <ul className="list-none text-lg md:text-2xl flex flex-wrap items-center gap-10 flex-shrink-0 justify-center">
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <a href="/pokedex">Pokédex</a>
+                </li>
+                <li>
+                  <a href="/types">Types</a>
+                </li>
+                <li>
+                  <a href="/regions">Regions</a>
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faHeart} width="25" />
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faUser} width="20" />
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faSearch} width="20" />
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav
-            role="navigation"
-            className="menuItems font-heading text-white uppercase mt-14"
-          >
-            <ul className="list-none text-lg md:text-2xl flex flex-wrap items-center gap-10 flex-shrink-0 justify-center">
-              <li>
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="/pokedex">Pokédex</a>
-              </li>
-              <li>
-                <a href="/types">Types</a>
-              </li>
-              <li>
-                <a href="/regions">Regions</a>
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faHeart} width="25" />
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faUser} width="20" />
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faSearch} width="20" />
-              </li>
-            </ul>
-          </nav>
+          <div className="credits px-4 py-2 w-full text-center md:text-right font-accent">
+            Developed by{" "}
+            <a className="hover:text-accent" href="http://venuvivek.com">
+              Venu Vivek Cheruku
+            </a>
+          </div>
         </footer>
       </body>
     </html>

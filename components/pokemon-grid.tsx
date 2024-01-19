@@ -90,9 +90,9 @@ export function PokemonGrid() {
 
       <div className="pokemonCollectionContainer mt-14">
         <div className="flex flex-wrap gap-4 md:gap-10 justify-around ">
-          {filteredPokemonList.map((pokemon: any) => {
+          {filteredPokemonList.map((pokemon: any, index: number) => {
             return (
-              <div className="pokemon-card">
+              <div className="pokemon-card" key={index}>
                 <PokemonCard
                   name={pokemon.name}
                   key={pokemon.name}

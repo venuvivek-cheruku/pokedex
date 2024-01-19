@@ -1,5 +1,4 @@
 "use client";
-import LoadingIcon from "@/components/loading";
 import { PokemonCard } from "@/components/pokemon-card";
 import {
   generateDescriptionWithOpenAI,

@@ -195,13 +195,19 @@ export default function PokemonPage({ params }: PokemonPageProps) {
                 <h2 className="font-heading text-3xl uppercase">abilities</h2>
               </div>
               {pokemonData.abilities.map(
-                (abilities: {
-                  ability: {
-                    name: string;
-                  };
-                }) => {
+                (
+                  abilities: {
+                    ability: {
+                      name: string;
+                    };
+                  },
+                  index: number
+                ) => {
                   return (
-                    <p className="mt-2 text-center capitalize font-body font-xl">
+                    <p
+                      key={index}
+                      className="mt-2 text-center capitalize font-body font-xl"
+                    >
                       {abilities.ability.name}
                     </p>
                   );
@@ -230,7 +236,10 @@ export default function PokemonPage({ params }: PokemonPageProps) {
                 {pokemonSpeciesData.egg_groups.map(
                   (egg_group: any, index: number) => {
                     return (
-                      <p className="mt-2 text-center capitalize font-body font-xl">
+                      <p
+                        key={index}
+                        className="mt-2 text-center capitalize font-body font-xl"
+                      >
                         {egg_group.name}
                       </p>
                     );
