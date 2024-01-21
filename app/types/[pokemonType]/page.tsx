@@ -100,14 +100,14 @@ export default function PokemonTypePage({
     <>
       <div className="pokemonType-container mt-14 md:mt-36 ">
         <div className="flex flex-col md:flex-row gap-10 items-center justify-around">
-          <Image
-            src={"/images/" + pokemonType + ".svg"}
-            alt="Pokemon Type Icon"
-            width={350}
-            height={350}
-            layout="responsive"
-            sizes="(max-width: 768px) 250px, 250px"
-          />
+          <div className="w-96 h-96 md:w-[500px] md:h-[500px] relative flex-shrink-0">
+            <Image
+              src={"/images/" + pokemonType + ".svg"}
+              alt="Pokemon Type Icon"
+              fill={true}
+              sizes="(max-width: 768px) 250px, 250px"
+            />
+          </div>
           <div className="type-content flex flex-col gap-4 text-center md:text-left">
             <h1 className="font-heading text-4xl md:text-5xl uppercase mt-7 ">
               {pokemonType}

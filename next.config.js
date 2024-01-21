@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -7,6 +8,9 @@ const nextConfig = {
         hostname: "raw.githubusercontent.com",
       },
     ],
+  },
+  env: {
+    openAiApiKey: process.env.OPENAI_API_KEY,
   },
 };
 

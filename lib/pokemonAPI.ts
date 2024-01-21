@@ -1,5 +1,5 @@
 const POKEMON_API = "https://pokeapi.co/api/v2/";
-const openaiApiKey = process.env.OPENAI_API_KEY;
+const openaiApiKey = process.env.openAiApiKey;
 
 // getPokemon first
 

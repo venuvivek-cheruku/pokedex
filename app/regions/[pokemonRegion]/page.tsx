@@ -137,7 +137,7 @@ export default function RegionPage({
         </div>
       )}
 
-      <div className="flex flex-wrap justify-around gap-20 mt-14">
+      <div className="flex flex-wrap justify-around gap-10 md:gap-20 mt-14">
         {fetchRegionTypes.map((type: any, index: number) => {
           if (type.name === "shadow" || type.name === "unknown") {
             return null;
@@ -149,8 +149,8 @@ export default function RegionPage({
                     <Image
                       src={"/images/" + type.name + ".svg"}
                       alt={type.name + "Image"}
-                      width={200}
-                      height={200}
+                      width={150}
+                      height={150}
                     />
                     <h1 className="font-heading text-xl text-center mt-4 uppercase">
                       {type.name}

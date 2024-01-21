@@ -37,7 +37,9 @@ export function FeaturedPokemon() {
     "heracross",
   ];
 
-  const [randomFeaturedPokemon, setRandomFeaturedPokemon] = useState<any>();
+  const [randomFeaturedPokemon, setRandomFeaturedPokemon] = useState<any>(
+    featuredPokemon[0]
+  );
   const [openAIDescription, setOpenAIDescription] = useState("");
 
   const [featuredPokemonData, setFeaturedPokemonData] =
@@ -100,7 +102,7 @@ export function FeaturedPokemon() {
 
             <PokemonTypeButtons pokemonType={featuredPokemonData.types} />
           </div>
-          <div className="pokemonItemContent text-center md:text-left">
+          <div className="pokemonItemContent text-center md:text-left min-w-full md:min-w-[500px]">
             <h2 className="font-heading text-4xl uppercase">
               {featuredPokemonData.name}
             </h2>
