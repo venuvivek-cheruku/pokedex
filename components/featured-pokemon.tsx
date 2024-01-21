@@ -7,7 +7,7 @@ import { PokemonTypeButtons } from "./pokemon-type";
 import { PokemonStats } from "./pokemon-stat";
 import Link from "next/link";
 import { PokemonCircleImage } from "./pokemon-circle-image";
-import loadingGif from "../public/static/Images/loading.gif";
+import loadingGif from "../public/static/images/loading.gif";
 
 interface PokemonProps {
   pokemonData: any;

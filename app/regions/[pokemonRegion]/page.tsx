@@ -29,12 +29,12 @@ export default function RegionPage({
     PokemonRegionProps[]
   >([]);
   const [regionDescription, setRegionDescription] = useState("");
-  const [loadedImages, setLoadedImages] = useState<string[]>([]);
+  const [loadedimages, setLoadedimages] = useState<string[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [searchText, setSearchText] = useState("");
 
   const handleImageLoad = (imageUrl: string) => {
-    setLoadedImages((prevImages) => [...prevImages, imageUrl]);
+    setLoadedimages((previmages) => [...previmages, imageUrl]);
   };
 
   const regionToGeneration = () => {
@@ -199,7 +199,7 @@ export default function RegionPage({
                 onLoad={() => handleImageLoad(imageUrl)}
                 style={{ display: "none" }}
               />{" "}
-              {loadedImages && (
+              {loadedimages && (
                 <PokemonCard
                   name={type.name}
                   key={type.name}

@@ -4,8 +4,8 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import slideImageOne from "../public/static/Images/slideImageOne.png";
-import mew from "../public/static/Images/mew.png";
+import slideImageOne from "../public/static/images/slideImageOne.png";
+import mew from "../public/static/images/mew.png";
 
 export function HeroSlider() {
   const settings = {

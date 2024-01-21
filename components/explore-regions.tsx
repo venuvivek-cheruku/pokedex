@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import region1 from "../public/static/Images/region1.png";
-import region2 from "../public/static/Images/region2.png";
-import region3 from "../public/static/Images/region3.png";
+import region1 from "../public/static/images/region1.png";
+import region2 from "../public/static/images/region2.png";
+import region3 from "../public/static/images/region3.png";
 
 export async function ExploreRegions() {
   return (

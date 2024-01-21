@@ -37,10 +37,10 @@ export default function PokemonTypePage({
 
   const pokemonType = params.pokemonType;
 
-  const [loadedImages, setLoadedImages] = useState<string[]>([]);
+  const [loadedimages, setLoadedimages] = useState<string[]>([]);
 
   const handleImageLoad = (imageUrl: string) => {
-    setLoadedImages((prevImages) => [...prevImages, imageUrl]);
+    setLoadedimages((previmages) => [...previmages, imageUrl]);
   };
 
   useEffect(() => {
@@ -352,7 +352,7 @@ export default function PokemonTypePage({
                   onLoad={() => handleImageLoad(imageUrl)}
                   style={{ display: "none" }}
                 />{" "}
-                {loadedImages.includes(imageUrl) && (
+                {loadedimages.includes(imageUrl) && (
                   <PokemonCard
                     name={type.pokemon.name}
                     key={type.pokemon.name}

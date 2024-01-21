@@ -4,10 +4,10 @@ import "./globals.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { faHeart, faSearch, faUser } from "@fortawesome/free-solid-svg-icons";
-import { useRouter } from "next/router";
 import Breadcrumbs from "@/components/breadcrumbs";
 import Link from "next/link";
 import HamburgerIcon from "@/components/humburger";
+import logo from "../public/static/images/logo.png";
 
 const changaOne = Changa_One({
   weight: "400",
@@ -53,7 +53,7 @@ export default function RootLayout({
               <div className="logo">
                 <Link href={"/"}>
                   <Image
-                    src="/static/images/logo.png"
+                    src={logo}
                     alt="Your Company Logo"
                     width="120"
                     height="50"
@@ -110,7 +110,7 @@ export default function RootLayout({
           <div className="p-20  flex flex-col items-center justify-center mt-14  md:mt-36 border-t border-t-darkGray">
             <div className="footer-logo-image w-60 md:w-80 relative h-20 md:h-32 ">
               <Image
-                src={"/static/images/logo.png"}
+                src={logo}
                 style={{ objectFit: "contain" }}
                 fill={true}
                 priority

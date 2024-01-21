@@ -6,10 +6,10 @@ import {
 } from "@/lib/pokemonAPI";
 import Image from "next/image";
 import Link from "next/link";
-import charmander from "../public/static/Images/charmander.png";
-import squirtle from "../public/static/Images/squirtle.png";
-import bulbasaur from "../public/static/Images/bulbasaur.png";
-import pikachu2 from "../public/static/Images/pikachu2.png";
+import charmander from "../public/static/images/charmander.png";
+import squirtle from "../public/static/images/squirtle.png";
+import bulbasaur from "../public/static/images/bulbasaur.png";
+import pikachu2 from "../public/static/images/pikachu2.png";
 
 export async function ExploreTypes() {
   return (
