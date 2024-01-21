@@ -1,7 +1,7 @@
 import Image from "next/image";
-import ph1 from "../public/images/ph1.png";
-import phRegions from "../public/images/phRegions.png";
-import phType2 from "../public/images/phType2.png";
+import ph1 from "../public/images/pokemonHighlightsOne.png";
+import phRegions from "../public/images/pokemonHighlightsTwo.png";
+import phType2 from "../public/images/pokemonHighlightsThree.png";
 
 export function PokemonHighlights() {
   return (
