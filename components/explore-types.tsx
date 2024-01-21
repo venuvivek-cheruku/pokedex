@@ -6,11 +6,15 @@ import {
 } from "@/lib/pokemonAPI";
 import Image from "next/image";
 import Link from "next/link";
+import charmander from "../public/static/Images/charmander.png";
+import squirtle from "../public/static/Images/squirtle.png";
+import bulbasaur from "../public/static/Images/bulbasaur.png";
+import pikachu2 from "../public/static/Images/pikachu2.png";
 
 export async function ExploreTypes() {
   return (
     <>
-      <div className="exploreByTypesContainer mt-14 md:mt-36 md:mt-36">
+      <div className="exploreByTypesContainer mt-14 md:mt-36">
         <div className="section-title text-center">
           <h1 className="font-heading text-4xl md:text-5xl">
             Explore by Types
@@ -29,11 +33,7 @@ export async function ExploreTypes() {
                   filter: "brightness(2)",
                 }}
               ></span>
-              <Image
-                src={"/static/images/charmander.png"}
-                alt={"type Image"}
-                fill={true}
-              />
+              <Image src={charmander} alt={"type Image"} fill={true} />
             </div>
             <div className="mt-10 text-center">
               <Link
@@ -57,7 +57,7 @@ export async function ExploreTypes() {
                 }}
               ></span>
               <Image
-                src={"/static/images/squirtle.png"}
+                src={squirtle}
                 alt={"type Image"}
                 fill={true}
                 style={{ width: "100%", height: "100%" }}
@@ -84,11 +84,7 @@ export async function ExploreTypes() {
                   filter: "brightness(1)",
                 }}
               ></span>
-              <Image
-                src={"/static/images/bulbasaur.png"}
-                alt={"type Image"}
-                fill={true}
-              />
+              <Image src={bulbasaur} alt={"type Image"} fill={true} />
             </div>
             <div className="mt-10 text-center">
               <Link
@@ -111,11 +107,7 @@ export async function ExploreTypes() {
                   filter: "brightness(2)",
                 }}
               ></span>
-              <Image
-                src={"/static/images/pikachu2.png"}
-                alt={"type Image"}
-                fill={true}
-              />
+              <Image src={pikachu2} alt={"type Image"} fill={true} />
             </div>
             <div className="mt-10 text-center">
               <Link

@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import slideImageOne from "../public/static/Images/slideImageOne.png";
+import mew from "../public/static/Images/mew.png";
 
 export function HeroSlider() {
   const settings = {
@@ -100,7 +101,7 @@ export function HeroSlider() {
                       style={{ background: "#f95587" }}
                     ></span>
                     <Image
-                      src="/static/images/mew.png"
+                      src={mew}
                       alt="Slide Image"
                       fill={true}
                       sizes="(max-width: 768px) 300px"

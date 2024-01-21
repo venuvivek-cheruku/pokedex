@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import region1 from "../public/static/Images/region1.png";
+import region2 from "../public/static/Images/region2.png";
+import region3 from "../public/static/Images/region3.png";
 
 export async function ExploreRegions() {
   return (
@@ -16,11 +19,7 @@ export async function ExploreRegions() {
               className="relative w-80 h-72
             "
             >
-              <Image
-                src={"/static/images/region-1.png"}
-                alt={"region Image"}
-                fill={true}
-              />
+              <Image src={region1} alt={"region Image"} fill={true} />
             </div>
             <div className="mt-10 text-center">
               <Link
@@ -36,11 +35,7 @@ export async function ExploreRegions() {
               className="relative w-80 h-72
             "
             >
-              <Image
-                src={"/static/images/region-2.png"}
-                alt={"region Image"}
-                fill={true}
-              />
+              <Image src={region2} alt={"region Image"} fill={true} />
             </div>
             <div className="mt-10 text-center">
               <Link
@@ -56,11 +51,7 @@ export async function ExploreRegions() {
               className="relative w-80 h-72
             "
             >
-              <Image
-                src={"/static/images/region-3.png"}
-                alt={"region Image"}
-                fill={true}
-              />
+              <Image src={region3} alt={"region Image"} fill={true} />
             </div>
             <div className="mt-10 text-center">
               <Link

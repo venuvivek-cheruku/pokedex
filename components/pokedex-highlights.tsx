@@ -1,9 +1,12 @@
 import Image from "next/image";
+import ph1 from "../public/static/Images/ph1.png";
+import PhRegions from "../public/static/Images/PhRegions.png";
+import phType2 from "../public/static/Images/phType2.png";
 
 export function PokemonHighlights() {
   return (
     <>
-      <div className="pokemonHighlightsContainer mt-14 md:mt-36 md:mt-36">
+      <div className="pokemonHighlightsContainer mt-14 md:mt-36 ">
         <div className="section-title text-center">
           <h1 className="font-heading text-4xl md:text-5xl">
             Pokédex Highlights
@@ -14,7 +17,7 @@ export function PokemonHighlights() {
             <div className="imageWithCircle relative w-72 h-72 md:w-[450px] md:h-[450px] ">
               <span className="imageWithBGCircle"></span>
               <Image
-                src="/static/images/ph1.png"
+                src={ph1}
                 alt="Slide Image"
                 fill={true}
                 sizes="(max-width: 768px) 18rem, 18rem"
@@ -32,7 +35,7 @@ export function PokemonHighlights() {
           <div className="PhGridItem text-center">
             <div className="phGridItemImg w-full h-48 relative overflow-hidden rounded-lg">
               <Image
-                src="/static/images/PhRegions.png"
+                src={PhRegions}
                 alt="Slide Image"
                 fill={true}
                 sizes="(max-width: 768px) 18rem, 18rem"
@@ -48,10 +51,10 @@ export function PokemonHighlights() {
               </a>
             </div>
           </div>
-          <div className="PhGridItem text-center">
-            <div className="phGridItemImg w-full h-48 relative  bg-bgSecondary ">
+          <div className="PhGridItem text-center mt-4">
+            <div className="phGridItemImg w-full md:w-[500px]  h-48 relative  bg-bgSecondary ">
               <Image
-                src="/static/images/phType2.png"
+                src={phType2}
                 alt="Slide Image"
                 fill={true}
                 style={{

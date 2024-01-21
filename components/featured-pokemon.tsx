@@ -7,6 +7,7 @@ import { PokemonTypeButtons } from "./pokemon-type";
 import { PokemonStats } from "./pokemon-stat";
 import Link from "next/link";
 import { PokemonCircleImage } from "./pokemon-circle-image";
+import loadingGif from "../public/static/Images/loading.gif";
 
 interface PokemonProps {
   pokemonData: any;
@@ -87,11 +88,7 @@ export function FeaturedPokemon() {
   if (loading) {
     return (
       <div className="loading-image w-24 relative h-24">
-        <Image
-          src="/static/images/loading.gif"
-          fill={true}
-          alt={`Loading gif`}
-        />
+        <Image src={loadingGif} fill={true} alt={`Loading gif`} />
       </div>
     );
   }
