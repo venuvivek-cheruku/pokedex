@@ -1,5 +1,5 @@
 const POKEMON_API = "https://pokeapi.co/api/v2/";
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+const openaiApiKey = process.env.OPENAI_API_KEY;
 
 // getPokemon first
 
@@ -85,7 +85,7 @@ export async function generateDescriptionWithOpenAI(prompt: any) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: "Bearer " + OPENAI_API_KEY,
+        Authorization: "Bearer " + openaiApiKey,
       },
       body: JSON.stringify(APIBody),
     });
