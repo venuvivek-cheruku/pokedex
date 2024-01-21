@@ -37,9 +37,7 @@ export function FeaturedPokemon() {
     "heracross",
   ];
 
-  const [randomFeaturedPokemon, setRandomFeaturedPokemon] = useState<any>(
-    featuredPokemon[0]
-  );
+  const [randomFeaturedPokemon, setRandomFeaturedPokemon] = useState<any>();
   const [openAIDescription, setOpenAIDescription] = useState("");
 
   const [featuredPokemonData, setFeaturedPokemonData] =
