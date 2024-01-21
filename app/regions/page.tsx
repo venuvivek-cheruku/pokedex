@@ -78,7 +78,7 @@ export default function PokemonRegions() {
               href={`/regions/${generationRegionsLowercase[index]}`}
             >
               <Image
-                src={`/static/images/${generationRegionsLowercase[index]}.png`}
+                src={`/images/${generationRegionsLowercase[index]}.png`}
                 alt={`Picture of ${generationRegions[index]}`}
                 fill={true}
                 priority

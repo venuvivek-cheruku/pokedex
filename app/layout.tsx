@@ -7,7 +7,7 @@ import { faHeart, faSearch, faUser } from "@fortawesome/free-solid-svg-icons";
 import Breadcrumbs from "@/components/breadcrumbs";
 import Link from "next/link";
 import HamburgerIcon from "@/components/humburger";
-import logo from "../public/static/images/logo.png";
+import logo from "../public/images/logo.png";
 
 const changaOne = Changa_One({
   weight: "400",

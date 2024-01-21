@@ -10,7 +10,7 @@ export default function LoadingIcon({ loading }: LoadingIconProps) {
       {loading && (
         <div className="loading-image w-32 relative h-32 mt-20">
           <Image
-            src="/static/images/loading.gif"
+            src="/images/loading.gif"
             style={{ objectFit: "contain" }}
             fill={true}
             priority

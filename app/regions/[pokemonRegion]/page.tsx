@@ -103,7 +103,7 @@ export default function RegionPage({
     return (
       <div className="loading-image w-32 relative h-32 mt-20">
         <Image
-          src="/static/images/loading.gif"
+          src="/images/loading.gif"
           style={{ objectFit: "contain" }}
           fill={true}
           alt={`Loading gif`}
@@ -122,7 +122,7 @@ export default function RegionPage({
       </div>
       <div className="region-map relative w-full h-[450px] md:h-[650px] mt-4">
         <Image
-          src={`/static/images/${regionName}-map.png`}
+          src={`/images/${regionName}-map.png`}
           alt={`${regionName} Region Map`}
           fill={true}
           priority
@@ -147,7 +147,7 @@ export default function RegionPage({
                 <Link href={`/types/${type.name}`} key={index}>
                   <div className="typeImage">
                     <Image
-                      src={"/static/images/" + type.name + ".svg"}
+                      src={"/images/" + type.name + ".svg"}
                       alt={type.name + "Image"}
                       width={200}
                       height={200}
