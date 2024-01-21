@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ph1 from "../public/images/ph1.png";
-import PhRegions from "../public/images/phRegions.png";
+import phRegions from "../public/images/phRegions.png";
 import phType2 from "../public/images/phType2.png";
 
 export function PokemonHighlights() {
@@ -35,7 +35,7 @@ export function PokemonHighlights() {
           <div className="PhGridItem text-center">
             <div className="phGridItemImg w-full h-48 relative overflow-hidden rounded-lg">
               <Image
-                src={PhRegions}
+                src={phRegions}
                 alt="Slide Image"
                 fill={true}
                 sizes="(max-width: 768px) 18rem, 18rem"
