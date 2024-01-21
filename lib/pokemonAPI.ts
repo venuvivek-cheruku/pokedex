@@ -1,7 +1,5 @@
-import { error } from "console";
-
 const POKEMON_API = "https://pokeapi.co/api/v2/";
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = process.env.apiKey;
 
 // getPokemon first
 
