@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import slideImageOne from "../public/static/Images/slideImageOne.png";
 
 export function HeroSlider() {
   const settings = {
@@ -62,7 +62,7 @@ export function HeroSlider() {
                   <div className="imageWithCircle relative w-60 md:w-[500px] h-60 md:h-[500px]">
                     <span className="imageWithBGCircle"></span>
                     <Image
-                      src="/static/images/slideImageOne.png"
+                      src={slideImageOne}
                       alt="Slide Image"
                       fill={true}
                       sizes="(max-width: 768px) 300px"
